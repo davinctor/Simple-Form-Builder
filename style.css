@@ -1,0 +1,268 @@
+
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+  margin:0;
+  padding:0;
+}
+html,body {
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+img { 
+  border:0;
+}
+address,caption,cite,code,dfn,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+ol,ul {
+  list-style:none;
+}
+caption,th {
+  text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+header{
+  display: block;
+}
+/* General Style */
+
+body {
+  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3a2127;
+  overflow-y: scroll;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.clr {
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.container header {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container header h1 {
+ color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+/** FORM STYLES **/
+
+.form {
+  width: 70%;
+  margin:0 auto; 
+  padding: 10px 20px 0 20px;
+  box-shadow: 1px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.form fieldset {
+  border: 0px; 
+  padding: 0px; 
+  margin: 0px;
+}
+
+.form div.contact {
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 20px 1% 0 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-family:Arial, Helvetica;
+  border: 1px solid #66afe9;
+  border-radius: 7px;
+  border: 1px solid rgba(122, 192, 0, 0.15);
+}
+
+.form div.contact:hover {
+  border: 1px solid #66afe9;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(50,50,50, 0.8);
+  cursor: pointer;
+}
+
+.form div[id^="level"] {
+  border-bottom: 1px solid #E4E4E4;
+  padding-bottom: 15px;
+  margin: 15px 0;
+}
+
+label { 
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #605F5F; 
+  font-weight:bold;
+  font-size: 12px;
+  font-family:Arial, Helvetica; 
+}
+
+input, textarea, select { 
+  background-color: rgba(255, 255, 255, 0.4); 
+  border: 1px solid rgba(122, 192, 0, 0.15); 
+  padding: 7px; 
+  font-family: Keffeesatz, Arial; 
+  border-radius: 10px;
+  color: #4b4b4b; 
+  font-size: 14px; 
+  margin-bottom: 15px;
+  outline: none;
+}
+
+input:focus, textarea:focus { 
+  border: 1px solid #66afe9;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.form .property {
+  display: inline-block;
+}
+
+.form .property > span {
+  display: inline-block;
+  margin: 0 5px 10px 0;
+  color: rgba(50,50,50, 0.6);
+  border: 1px solid rgba(122, 192, 0, 0.15);
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.4);
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+button, a.btn {
+  float: right;
+  background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%);
+  background-image: -o-linear-gradient(top,#5cb85c 0,#419641 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#5cb85c),to(#419641));
+  background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+  display: inline-block; 
+  padding: 12px;
+  margin-right: 20px;
+  color: #fbf7f7; 
+  text-decoration: none; 
+  font-weight: bold; 
+  -moz-border-radius: 10px; 
+  -webkit-border-radius: 10px; 
+  border-radius: 10px; 
+  -moz-box-shadow: 0 1px 3px #999; 
+  -webkit-box-shadow: 0 1px 3px #999; 
+  box-shadow: 0 1px 3px #999; 
+  text-shadow: 0 -1px 1px #222; 
+  border: none;
+  cursor: pointer; 
+  font-size: 14px; 
+  font-family:Verdana, Geneva, sans-serif;
+  margin: 10px 10px 15px; 
+}
+
+button.warning, a.warning {
+  background-image: -webkit-linear-gradient(top,#d9534f 0,#c12e2a 100%);
+  background-image: -o-linear-gradient(top,#d9534f 0,#c12e2a 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#d9534f),to(#c12e2a));
+  background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+}
+
+button.confirm, a.confirm {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  background-image: none;
+}
+
+/** Modal dialog **/
+
+.modal-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.498039) 0px 5px 15px 0px;
+  -moz-box-shadow:0px 5px 15px 0px rgba(0, 0, 0, 0.498039);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.498039);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container .dialog-content, .modal-container .form-content {
+  position: relative;
+  width: 30%;
+  left: 35%;
+  top: 20%;
+  bottom: 20%;
+  right: 35%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px 15px 30px;
+}
+
+.modal-container .form-control input {
+  width: 95%;
+}
+
+.modal-container .form-control button {
+  float: none;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.modal-container .close {
+  float: right;
+  margin-top: -10px;
+  margin-right: -15px;
+  color: #605F5F;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  -webkit-transform:scale(1.4, 1.0);
+  -moz-transform:scale(1.4, 1.0);
+  -ms-transform:scale(1.4, 1.0);
+  -o-transform:scale(1.4, 1.0);
+  transform:scale(1.4,1.0);
+}
+
+/** Click form **/
+.form-content h1 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}

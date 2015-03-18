@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script src="test.js"></script>
+</head>
+<body>
+<div class="container">
+      <div class="form">
+      		<header>
+				<h1>Properties owned</h1>
+            </header>
+            <div>
+			</div>
+          	<button id="btn-new-block">Add new info-block</button>
+          	<button id="btn-new-prop">Add new property</button>
+            <div class="clr"></div>
+        </div>    
+</div>
+<div id="prop-dialog" class="modal-container hide">
+	<div class="dialog-content">
+		<div class="content">
+		<div class="close" id="btn-close-prop">x</div>
+			<form id="prop-form" method="post">
+			   	<div class="form-control">
+		   			<label>Block name: </label> 
+		   			<input type="text" name="block-name">
+		   		</div>
+		   		<div class="form-control">
+		   			<label>Prop name:</label> 
+		   			<input type="text" name="prop-name">
+		   		</div>
+		   		<div class="form-control">
+		   			<label>Prop type:</label> 
+		   			<select name="prop-type">
+		   				<option value="text">Text</option>
+		   				<option value="select">Select</option>
+		   				<option value="textarea">TextArea</option>
+		   			</select>
+		   		</div>
+		   		<div class="form-control">
+		   			<label>Prop value:</label> 
+		   			<input type="textarea" name="prop-value">
+		   		</div>
+		   		<div class="form-control">
+		   			<button class="confirm" id="btn-save-property" type="button"> Create </button>
+		   			<button class="warning" type="reset"> Clear </button>
+		   		</div>
+		   	</form>
+   		</div>
+   	</div>
+</div>
+
+<div id="block-dialog" class="modal-container hide">
+	<div class="dialog-content">
+		<div class="content">
+		<div class="close" id="btn-close-block">x</div>
+			<form id="block-form" method="post">
+				<div class="form-control">
+			   		<label>Row number:</label>
+			   		<input type="number" name="level-number" min="1" max="4" value="1">
+			   	</div>
+			   	<div class="form-control">
+		   			<label>Block name: </label> 
+		   			<input type="text" name="block-name">
+		   		</div>
+		   		<div class="form-control">
+		   			<button class="confirm" id="btn-save-block" type="button"> Create </button>
+		   			<button class="warning" type="reset"> Clear </button>
+		   		</div>
+		   	</form>
+   		</div>
+   	</div>
+</div>
+<div id="form-dialog" class="modal-container hide">
+	<div class="form-content">
+		<div class="close" onclick="toggleDialog('form-dialog')">x</div>
+		<form>
+		<div class="content">
+			
+		</div>
+		<div class="form-control">
+			<button class="confirm" onclick="updateData()" type="button"> Save </button>
+			<button class="warning" type="reset"> Reset old </button>
+		</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
