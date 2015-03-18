@@ -1,7 +1,7 @@
 Begin.
 
 Simple Form-Builder.
-	For adding new user-info block click to "Add new info-block":
+	For adding new user-info block click to "Add new info-block":\n
 		- row number of block position
 		- label of block
 	For adding new property for any block click to "Add new property":
